@@ -1,0 +1,255 @@
+*{
+
+margin:0;
+
+padding:0;
+
+}
+
+body{
+
+color:#262626;
+
+background: url('');
+
+font-family:Helevetica,Arial,sans-serif;
+
+border-radius: 4px;
+
+text-shadow: 0px 0px 1px rgba(255, 0, 0, 0.02);
+
+}
+
+
+
+.head{
+
+background:url('bg.png');
+
+padding:5px;
+
+margin-top:10px;
+
+color:#FFF;
+
+text-shadow: 0px 0px 7px rgba(223, 223, 223, 0.75);
+
+text-align:center;
+
+font-weight:bold;
+
+font-size:14px;
+
+border-radius: 4px;
+
+
+
+}
+
+
+
+
+
+
+
+.bodypanel{
+
+border:1px solid #e8e8e8;
+
+
+
+padding:6px;
+
+text-align:center;
+
+color:#999;
+
+background:#FFF;
+
+border-radius: 4px;
+
+}
+
+
+
+.bodypanel span{
+
+color:#999;
+
+border-radius: 4px;
+
+}
+
+
+
+.tb td{
+
+text-align:center;
+
+border-radius: 4px;
+
+}
+
+
+
+.tbl{
+
+border:1px solid #CCC;
+
+border-radius: 4px;
+
+}
+
+
+
+.tr1{
+
+background:#FFF;
+
+border:1px solid #CCC;
+
+border-collapse:collapse;
+
+border-radius: 4px;
+
+}
+
+
+
+.tr2 td{
+
+background:#FFF;
+
+border-radius: 4px;
+
+}
+
+
+
+.tr3 td{
+
+background:#FFF;
+
+border:1px solid #CCC;
+
+border-collapse:collapse;
+
+border-radius: 4px;
+
+}
+
+
+
+.tr4 td{
+
+background:#FFF;
+
+border:1px solid #CCC;
+
+border-collapse:collapse;
+
+padding:3px;
+
+border-radius: 4px;
+
+}
+
+
+
+.ipt{
+
+border:1px solid #CCC;
+
+padding:4px;
+
+color:#999;
+
+text-align:center;
+
+margin-bottom:4px;
+
+-moz-border-radius:4px;
+
+-webkit-border-radius:4px;
+
+border-radius: 4px;
+
+
+
+}
+
+
+
+
+
+
+
+.btn{
+
+ text-align: center;
+
+    color: #555;
+
+    font-weight: 700;
+
+    font-size: 11px;
+
+    background: -webkit-linear-gradient(#fefefe, #fefefe);
+
+    background: -o-linear-gradient(#fefefe, #e7e7e7);
+
+    background: -moz-linear-gradient(#fefefe, #e7e7e7);
+
+    background: linear-gradient(#fefefe, #fefefe);
+
+    height: 25px;
+
+    width: auto;
+
+    overflow: visible;
+
+    border: 1px solid #c4c4c4;
+
+    padding: 0 10px;
+
+    border-radius: 4px;
+
+}
+
+.btn:hover {
+
+    color: #111;
+
+    border: 1px solid #c4c4c4;
+
+}
+
+
+
+
+
+.link a{
+
+border-bottom:#F1F1F1 solid 1px;
+
+padding:4px;
+
+display:block;
+
+}
+
+.link a:hover{
+
+color:#005599;
+
+
+
+}
+
+.br{
+
+clear:both;
+
+}
+
+

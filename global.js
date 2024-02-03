@@ -1,21 +1,53 @@
-var g;
+$(document).ready(function(){
 
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
+$('.read').hide();
+$('.more').mouseover(function(){
+$('.read').show('slow');
 
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1, eval)("this");
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
+});
+
+$('img').mouseover(function(){
+$(this).fadeTo(500,0.3);
+$(this).fadeTo(500,1);
+
+});
+$("img").simpletooltip();
+
+});
+function do_shurt(){
+  var loading = '<img align="center" src="images/loading.gif" alt="Loading ..." title="Loading ..." border="0" />';
+  $('#result').html(loading).show('slow');
+  var link = $("input#link").val();
+  var dataString = 'link='+link;
+	$.ajax({
+	  type: "POST",
+	  url: "add_link.php",
+	  data: dataString,
+	  success: function(msg) {
+		$('#result').html(msg)
+		//.slideDown('slow');
+		//$("#loading").hide();	
+	  }
+	});
 }
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
+$(document).ready(function(){ 
+	  $('.ipt').each( function () {
+	    $(this).val($(this).attr('defaultVal'));
+    $(this).css({color:'#999'});
+      });
+	 
+	  $('.ipt').focus(function(){
+	    if ( $(this).val() == $(this).attr('defaultVal') ){
+      $(this).val('');
+	      $(this).css({color:'#005599'});
+    }
+   });
+ $('.ipt').blur(function(){
+	    if ($(this).val() == '' ){
+      $(this).val($(this).attr('defaultVal'));
+	      $(this).css({color:'#999'});
+    }
+   });
+ 
+});
 
